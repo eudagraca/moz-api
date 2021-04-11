@@ -3,7 +3,9 @@ package moz.api.model;
 public enum  Location {
     CENTER("Centro"),
     NORTH("Norte"),
-    SOUTH("Sul");
+    SOUTH("Sul"),
+    EAST("Este"),
+    WEST("Oeste");
 
     private final String value;
 
