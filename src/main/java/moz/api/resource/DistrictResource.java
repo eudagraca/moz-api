@@ -5,14 +5,16 @@ import io.quarkus.panache.common.Page;
 import io.quarkus.panache.common.Sort;
 import io.quarkus.rest.data.panache.MethodProperties;
 import io.quarkus.rest.data.panache.ResourceProperties;
+import moz.api.model.District;
 import moz.api.model.Language;
+import moz.api.repository.DistrictRepository;
 import moz.api.repository.LanguageRepository;
-import javax.ws.rs.Path;
+
 import java.util.List;
 
-@ResourceProperties(path = "language")
-public interface LanguageResource extends PanacheRepositoryResource<LanguageRepository, Language, Long> {
+@ResourceProperties(path = "district")
+public interface DistrictResource extends PanacheRepositoryResource<DistrictRepository, District, Long> {
 
     @MethodProperties()
-    List<Language> list(Page page, Sort sort);
+    List<District> list(Page page, Sort sort);
 }

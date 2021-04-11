@@ -9,7 +9,7 @@ import moz.api.model.Province;
 import moz.api.repository.ProvinceRepository;
 import java.util.List;
 
-@ResourceProperties(path = "v1/province/")
+@ResourceProperties(path = "province/")
 public interface ProvinceResource extends PanacheRepositoryResource<ProvinceRepository, Province, Long> {
     @MethodProperties()
     List<Province> list(Page page, Sort sort);
