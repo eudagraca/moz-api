@@ -45,4 +45,3 @@ You can then execute your native executable with: `./target/moz-api-1.0.0-SNAPSH
 
 ### RESTEasy JAX-RS example
 
-REST is easy peasy with this Hello World RESTEasy resource.
